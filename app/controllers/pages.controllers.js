@@ -2,7 +2,7 @@ let page = '';
 
 exports.get = (req, res) => {
     console.log('Sending HTML PAGE');
-    var json = JSON.stringify({html = page});
+    var json = JSON.stringify({html: page});
     res.send(json);
 }
 
