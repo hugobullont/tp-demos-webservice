@@ -26,6 +26,7 @@ app.get('/', (req, res) => {
 });
 
 require('./app/routes/ble.routes.js')(app);
+require('./app/routes/pages.routes.js')(app);
 
 // listen for requests
 app.listen(2021, () => {
