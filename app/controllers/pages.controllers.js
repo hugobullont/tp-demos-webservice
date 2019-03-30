@@ -2,6 +2,7 @@ let page = '';
 
 exports.get = (req, res) => {
     console.log('Sending HTML PAGE');
+    res.setHeader('Content-Type', 'application/json');
     res.send({body: page});
 }
 
